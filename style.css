@@ -1,0 +1,281 @@
+body {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  border: 1px solid black;
+  z-index: 100;
+  transition: 1s;
+}
+
+.header-tittle {
+  font-size: 30px;
+  text-align: center;
+  background-color: #ded7cf;
+  border: 2px solid black;
+  font-weight: 400;
+  color: rgb(26, 26, 26);
+}
+.btn-menu {
+  position: absolute;
+  top: 35px;
+
+  font-size: 30px;
+  right: 20px;
+  display: none;
+}
+.close-menu {
+  display: none;
+}
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20px;
+  border: 2px solid black;
+  background-color: #fff;
+}
+
+.header-nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.nowme {
+  display: grid;
+  grid-template-columns: 40% 35% 25%;
+  grid-template-rows: 650px;
+  border: 1px solid black;
+  height: auto;
+}
+
+.nowme-img {
+  border: 1px solid black;
+}
+.nowme-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.nowme-text {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+
+  align-items: center;
+}
+
+.nowme-text p {
+  text-align: center;
+  font-size: 25px;
+  width: 60%;
+}
+.nowme-text a {
+  margin-top: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.nowme-text_bold {
+  font-weight: bold;
+}
+.nowme-img2 {
+  border: 1px solid black;
+}
+.nowme-img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.myexpirience {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 650px;
+  border: solid 1px black;
+}
+.myexpirience-img {
+  border: solid 1px black;
+}
+.myexpirience-img img {
+  width: 100%;
+  height: 100%;
+  border: solid 1px black;
+}
+
+.slider {
+  background-color: #ded7cf;
+  display: flex;
+  border: solid 1px black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mystudy {
+  display: grid;
+  grid-template-columns: 38% 33% 29%;
+  height: 650px;
+}
+
+.mystudy-degree {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(216, 226, 232);
+  border: 1px solid black;
+}
+.mystudy-degree i {
+  font-size: 35px;
+  color: #fff;
+}
+.mystudy-item h4 {
+  font-size: 22px;
+  color: rgb(26, 26, 26);
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background: url(https://images.pexels.com/photos/224924/pexels-photo-224924.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.mystudy-courses {
+  display: flex;
+  height: 100%;
+  border: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+.mystudy-courses-text {
+  font-size: 20px;
+  width: 80%;
+}
+.mystudy-courses-check {
+  display: flex;
+  height: 230px;
+  font-size: 20px;
+  margin-left: 30px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contactme {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 650px;
+  grid-auto-rows: 70px;
+  border: solid 1px black;
+}
+.contactme-img {
+  border: solid 1px black;
+}
+
+.contactme-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactme-text {
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ded7cf;
+}
+
+.contactme-text h4 {
+  font-size: 35px;
+  width: 70%;
+}
+
+.linkedin {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #ded7cf;
+  text-align: center;
+  font-size: 20px;
+}
+
+.linkedin a {
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .nowme,
+  .mystudy,
+  .myexpirience,
+  .contactme {
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 500px 500px;
+  }
+  .background-image {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    grid-template-columns: 100%;
+  }
+  .header-tittle {
+    background-color: #fff;
+  }
+  .btn-menu {
+    display: block;
+  }
+  .header-nav {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ded7cf;
+    height: 100vh;
+    width: 100%;
+    left: -110%;
+    transition: 1s;
+  }
+  .header-nav a {
+    font-size: 40px;
+  }
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+  .showMenu {
+    left: 0;
+  }
+}
